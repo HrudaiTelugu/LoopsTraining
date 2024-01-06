@@ -7,15 +7,21 @@ public class ForLoopEx2 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Enter the Base Number = ");
+		System.out.print("Enter the Base Number = ");
 		
 		int base = sc.nextInt();
 		
-		System.out.println("Enter the Power Number = ");
+		System.out.print("Enter the Power Number = ");
 		
 		int pow = sc.nextInt();
 		
-
+		int result=1;
+		
+		for(int i=1;i<=pow;i++) {
+			
+			result = result*base;
+		}
+		System.out.println("The Result is = "+result);
 	}
 
 }
